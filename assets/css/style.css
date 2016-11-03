@@ -1,0 +1,52 @@
+body {
+    background-color: yellow;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    padding-top: 60px;
+}
+
+.post {
+    text-align: center;
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.headroom {
+    transition: transform .25s ease-in-out, background-color .3s ease;
+    will-change: transform;
+}
+
+.headroom--pinned {
+    transform: translateY(0);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%)
+}
+
+.headroom--top {
+    background: transparent;
+    color: black;
+}
+
+.headroom--not-top {
+    background-color: #292f36;
+    color: white;
+}
+
+body {
+    background-color: yellow;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Ubuntu', sans-serif;
+}
