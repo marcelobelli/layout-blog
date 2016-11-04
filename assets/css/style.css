@@ -1,20 +1,60 @@
 body {
-    background-color: yellow;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Ubuntu', sans-serif;
 }
 
 main {
+    background-color: yellow;
     padding-top: 60px;
+}
+
+hr {
+    margin: 30px;
+    border: 1px solid #ccc;
 }
 
 .post {
     text-align: center;
 }
 
+.header-site {
+    position: relative;
+}
+
+
+.parallax, .parallax::after {
+    height: 600px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.parallax::after {
+    content: '';
+    background-image: linear-gradient(180deg,rgba(0,0,0,.8) 0,transparent 50%,transparent 90%,rgba(0,0,0,.8));
+    background-color: rgba(0,0,0,0.5);
+
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/****Header & Effects****/
+/************************/
 .header--fixed {
     position: fixed;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
     z-index: 10;
     right: 0;
     left: 0;
@@ -34,19 +74,50 @@ main {
     transform: translateY(-100%)
 }
 
+
+.headroom--top .logo, .headroom--not-top .logo {
+    color: #f9fbff;
+}
+
 .headroom--top {
     background: transparent;
-    color: black;
 }
 
 .headroom--not-top {
-    background-color: #292f36;
-    color: white;
+    background-color: #1d283a;
 }
 
-body {
-    background-color: yellow;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Ubuntu', sans-serif;
+.logo {
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 10px 20px;
 }
+
+
+
+nav a:hover, nav a:visited {
+    color: currentColor;
+}
+
+nav div a, nav div a:visited {
+    color: #1c1d21;
+}
+
+
+
+
+
+.nav-social {
+    display: flex;
+    align-items: center;
+    padding-right: 12px;
+    margin-left: auto;
+}
+
+.nav-social a span {
+    margin-left: 10px;
+}
+
+/***************************/
+/**End of Header & Effects**/
