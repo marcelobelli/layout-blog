@@ -5,7 +5,7 @@ body {
 }
 
 main {
-    background-color: yellow;
+    background-color: #edf1f7;
     padding-top: 60px;
 }
 
@@ -22,6 +22,16 @@ hr {
     position: relative;
 }
 
+.parallax-caption {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 3;
+}
 
 .parallax, .parallax::after {
     height: 600px;
@@ -94,8 +104,6 @@ hr {
     padding: 10px 20px;
 }
 
-
-
 nav a:hover, nav a:visited {
     color: currentColor;
 }
@@ -103,10 +111,6 @@ nav a:hover, nav a:visited {
 nav div a, nav div a:visited {
     color: #1c1d21;
 }
-
-
-
-
 
 .nav-social {
     display: flex;
