@@ -14,9 +14,38 @@ hr {
     border: 1px solid #ccc;
 }
 
-.post {
+footer {
     text-align: center;
 }
+
+.footer-text {
+    padding: 20px;
+}
+
+.post-preview {
+    text-align: center;
+}
+
+.post-preview .post-preview-link {
+    text-decoration: none;
+    color: currentColor;
+
+}
+
+.post-preview-title {
+
+}
+
+.post-preview-subtitle {
+    font-weight: normal;
+}
+
+.post-preview-meta {
+    color: grey;
+    font-style: italic;
+}
+
+
 
 .header-site {
     position: relative;
@@ -31,6 +60,13 @@ hr {
     text-align: center;
     color: white;
     z-index: 3;
+    font-size: 6rem;
+}
+
+@media (max-width: 480px) {
+    .parallax-caption {
+        font-size: 4rem;
+    }
 }
 
 .parallax, .parallax::after {
@@ -47,8 +83,8 @@ hr {
 
 .parallax::after {
     content: '';
-    background-image: linear-gradient(180deg,rgba(0,0,0,.8) 0,transparent 50%,transparent 90%,rgba(0,0,0,.8));
-    background-color: rgba(0,0,0,0.5);
+    background-image: linear-gradient(180deg,rgba(0,0,0,.5) 0,transparent 50%,transparent 90%,rgba(0,0,0,.5));
+    background-color: rgba(0,0,0,0.4);
 
     position: absolute;
     width: 100%;
@@ -85,7 +121,7 @@ hr {
 }
 
 
-.headroom--top .logo, .headroom--not-top .logo {
+footer, .headroom--top .logo, .headroom--not-top .logo {
     color: #f9fbff;
 }
 
@@ -93,7 +129,7 @@ hr {
     background: transparent;
 }
 
-.headroom--not-top {
+footer, .headroom--not-top {
     background-color: #1d283a;
 }
 
@@ -102,6 +138,7 @@ hr {
     text-decoration: none;
     letter-spacing: 2px;
     padding: 10px 20px;
+    font-weight: bold;
 }
 
 nav a:hover, nav a:visited {
